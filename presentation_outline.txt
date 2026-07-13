@@ -1,0 +1,175 @@
+CHATTAHOOCHEE TROUT FISHING FORECAST — BUILD PROGRESS
+Slide-by-slide outline (Steps 1-4 of 8 complete)
+=================================================================
+
+SLIDE 1 — TITLE
+-----------------
+Title: Chattahoochee Trout Fishing Forecast
+Subtitle: A machine learning pipeline for daily river-condition forecasts at
+the Buford Dam and Medlock Bridge USGS stations
+Footer/badge: Build status: Steps 1-4 of 8 complete
+Context line: INFD 651 — independent project
+Visual idea: water-drop / river motif, dark background
+
+SLIDE 2 — WHAT WE'RE BUILDING
+-----------------
+Header: What We're Building
+Subhead: Combine live river sensors with weather forecasts to tell anglers
+what to expect
+Three rows (icon + title + description):
+1. Real river data — 15-minute USGS readings: discharge, water temperature,
+   dissolved oxygen, turbidity at two Chattahoochee tailwater stations.
+2. Live weather — Hourly Open-Meteo data: air temperature, barometric
+   pressure, precipitation, and cloud cover, both historical and forecast.
+3. Daily condition forecast — A Good/Fair/Poor rating per station, refreshed
+   daily by a Streamlit app driven by a scheduled GitHub Actions pipeline.
+
+SLIDE 3 — SCOPE: CONDITIONS, NOT BITE QUALITY
+-----------------
+Header: Scope: River Conditions, Not Bite Quality
+Subhead: An important distinction we clarified in the docs before going further
+Two-column comparison:
+  LEFT — "We ARE predicting"
+    - Whether the water is safe and comfortable to fish and wade in
+    - Whether conditions sit within trout's physiological comfort zone
+      (temperature, oxygen)
+    - Whether flow and clarity are reasonable for the day
+  RIGHT — "We're NOT predicting"
+    - Whether fish will actually bite
+    - Catch rates or angler success
+    - No creel-survey or catch-report data exists anywhere in this pipeline
+Footer note (italic): "Good" means good conditions to go fish in — not a
+guaranteed catch. This framing carries through to the Streamlit UI copy.
+
+SLIDE 4 — TWO STATIONS ON THE TAILWATER
+-----------------
+Header: Two Stations on the Tailwater
+Subhead: Buford Dam sits upstream; Medlock Bridge is downstream on the same
+tailwater
+Visual idea: vertical river line with two pins (upstream -> downstream)
+Card 1 — Buford Dam
+  USGS 02334430
+  Parameters: Discharge, Water temperature, Dissolved oxygen, Conductance
+Card 2 — Medlock Bridge
+  USGS 02334578
+  Parameters: Discharge, Water temperature, Turbidity, Conductance
+
+SLIDE 5 — A FINDING FROM VERIFICATION
+-----------------
+Header: A Finding from Verification
+Subhead: The brief asked us to verify station coordinates against USGS
+metadata — good thing it did
+Callout: Station 02334578 isn't actually at Medlock Bridge
+Two columns:
+  "Brief said" — Name: "Medlock Bridge"; Coordinates: 34.0234, -84.2402
+  "USGS metadata says" — Name: "Level Creek at Suwanee Dam Road";
+    Coordinates: 34.0964, -84.0781 (verified via the dataretrieval package)
+Resolution note (italic): Kept the station ID — its discharge regime
+(~5 CFS median) matches the brief's stated Medlock stats — but used the
+verified coordinates for the weather pull.
+
+SLIDE 6 — PIPELINE ARCHITECTURE
+-----------------
+Header: Pipeline Architecture
+Flow (top to bottom):
+  USGS sensors (usgs.py -> fetch_and_pivot())      Open-Meteo API (weather.py)
+                        \                            /
+                         v                          v
+                    Join on 15-min grid (weather.py -> join_weather_to_usgs(),
+                    forward-fill)
+                              |
+                              v
+                    Feature engineering (engineering.py: deltas, rolling
+                    means, season, stocking weeks)
+                              |
+                              v
+                    Composite scoring (composite.py -> score_and_classify())
+                              |
+                              v
+                    Labeled dataset (data/processed/*.parquet)
+Side note: backfill.py runs every step above and saves the parquet output
+
+SLIDE 7 — FEATURE ENGINEERING
+-----------------
+Header: Feature Engineering
+Subhead: Turning raw 15-minute readings into signals a model can learn from
+Four items (numbered):
+1. Discharge rate of change — 1hr/3hr CFS deltas plus a stability flag
+   (<200 CFS/hr). Buford is a peaking hydro plant, so the rate of change
+   often matters more than the absolute level.
+2. Rolling water temperature — 3hr/12hr/24hr rolling means, computed with
+   time-based windows so gaps in the sensor grid don't silently skew results.
+3. Season & time-of-day — Meteorological seasons and Night/Morning/
+   Afternoon/Evening buckets, converted to local Eastern time since USGS and
+   Open-Meteo both report UTC.
+4. Stocking week flag — generate_stocking_weeks() reproduces GA DNR's weekly
+   April-July schedule, the pre-Labor Day top-offs, and a fall placeholder
+   week.
+
+SLIDE 8 — COMPOSITE SCORING RUBRIC
+-----------------
+Header: Composite Scoring Rubric
+Subhead: Station-specific point scales -> a composite score -> Good/Fair/Poor
+
+Table 1 — Buford Dam (max 9 pts)
+  Factor                | Points | Best case
+  Water temperature      | 0-3    | 10-18 C
+  Discharge               | 0-3    | 600-1800 CFS
+  Discharge stability      | 0-1    | <200 CFS/hr change
+  Dissolved oxygen          | 0-2    | >= 8 mg/L
+
+Table 2 — Medlock Bridge (max 7 pts)
+  Factor                | Points | Best case
+  Water temperature      | 0-3    | 10-18 C
+  Discharge (flood flag)  | 0-2    | <= 9.5 CFS normal
+  Turbidity                | 0-2    | <= 5 NTU
+
+Table 3 — Classification thresholds
+  Condition | Buford | Medlock
+  Good       | 7-9    | 5-7
+  Fair        | 4-6    | 3-4
+  Poor         | 0-3    | 0-2
+
+Footer note (italic): Missing readings score half credit — never zero, never
+full — so an offline sensor never unfairly tanks (or inflates) a day's
+rating.
+
+SLIDE 9 — VALIDATED RESULTS
+-----------------
+Header: Backfill Results Match Expected Balance
+Subhead: 2023-2026 historical backfill, scored and classified end-to-end
+Chart 1 — Buford Dam actual: Good 77.6%, Fair 18.8%, Poor 3.6%
+  Caption: Expected from prior EDA: ~78% Good
+Chart 2 — Medlock Bridge actual vs. expected:
+  Good: actual 66.6% / expected 59%
+  Fair: actual 30.4% / expected 37%
+  Poor: actual 3.0% / expected 4%
+
+SLIDE 10 — ROADMAP
+-----------------
+Header: Roadmap: Steps 1-4 Done, 5-8 Ahead
+8-step timeline:
+  1. USGS ingestion — done
+  2. Weather integration — done
+  3. Feature engineering — done
+  4. Composite scoring — done
+  5. Model training — not started
+  6. Live prediction pipeline — not started
+  7. Streamlit app — not started
+  8. Automation (GitHub Actions) — not started
+Callout note: Stopped here deliberately — "let's stop at step 4 for today."
+The historical dataset is validated and ready for step 5.
+
+SLIDE 11 — CLOSING / NEXT STEPS
+-----------------
+Header: Next Up: Step 5
+Subhead: Model training
+Bullets:
+  - XGBoost classifier per station (station-specific scoring stays separate
+    either way)
+  - Class weighting to address Buford's Good-heavy imbalance
+  - Time-based validation split — not random — given strong autocorrelation
+  - Feature importance sanity check against known physical drivers
+    (discharge should dominate at Buford; discharge/turbidity co-movement
+    at Medlock)
+Footer: trout-forecast/README.md has the full status writeup

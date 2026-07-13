@@ -1,0 +1,45 @@
+name: Daily trout forecast refresh
+
+on:
+  schedule:
+    # 11:00 UTC ~= 6-7am Eastern depending on DST -- early enough for anglers
+    # checking before a morning trip.
+    - cron: "0 11 * * *"
+  workflow_dispatch: {}
+
+concurrency:
+  group: daily-forecast
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  predict:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: trout-forecast
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: trout-forecast/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run live prediction pipeline
+        run: python -m src.pipeline.predict
+
+      - name: Commit updated forecast
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/live/latest_forecast.json
+          git diff --staged --quiet || git commit -m "Update daily forecast"
+          git push

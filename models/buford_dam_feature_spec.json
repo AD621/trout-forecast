@@ -1,0 +1,44 @@
+{
+  "feature_columns": [
+    "water_temp_c",
+    "discharge_cfs",
+    "conductance_uscm",
+    "dissolved_oxygen_mgl",
+    "temperature_2m",
+    "surface_pressure",
+    "precipitation",
+    "cloud_cover",
+    "discharge_delta_1hr_cfs",
+    "discharge_delta_3hr_cfs",
+    "discharge_stable_1hr",
+    "water_temp_roll_3hr",
+    "water_temp_roll_12hr",
+    "water_temp_roll_24hr",
+    "season",
+    "time_of_day",
+    "stocked_week_flag",
+    "hours_ahead"
+  ],
+  "categorical_categories": {
+    "season": [
+      "Fall",
+      "Spring",
+      "Summer",
+      "Winter"
+    ],
+    "time_of_day": [
+      "Afternoon",
+      "Evening",
+      "Morning",
+      "Night"
+    ]
+  },
+  "condition_order": [
+    "Poor",
+    "Fair",
+    "Good"
+  ],
+  "test_start": "2025-08-01",
+  "max_horizon_hours": 48,
+  "hours_ahead_column": "hours_ahead"
+}
