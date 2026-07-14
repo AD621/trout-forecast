@@ -10,3 +10,4 @@ data/processed/*
 !data/samples/
 .env
 *.egg-info/
+~$*
