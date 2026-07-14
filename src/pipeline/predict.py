@@ -19,7 +19,7 @@ import pandas as pd
 import xgboost as xgb
 
 from src.config import STATIONS
-from src.features.engineering import LOCAL_TZ, engineer_features, to_local
+from src.features.engineering import LOCAL_TZ, engineer_features
 from src.ingestion.usgs import fetch_and_pivot
 from src.ingestion.weather import fetch_weather_forecast, join_weather_to_usgs
 from src.modeling.features import CONDITION_ORDER, HOURS_AHEAD_COLUMN
@@ -105,25 +105,22 @@ def compute_daily_badge(timeline: list[dict]) -> str | None:
     return CONDITION_ORDER[int(np.argmax(avg))]
 
 
-def compute_current_summary(featured: pd.DataFrame) -> dict:
-    """'Right now' snapshot: today-so-far averages (local time), not a
-    prediction -- this is what's actually been measured today."""
-    local_df = to_local(featured)
-    today_start = pd.Timestamp.now(tz=LOCAL_TZ).normalize()
-    todays = local_df[local_df.index >= today_start]
-    if todays.empty:
-        todays = local_df.tail(4 * 24)  # fallback: last 24h if just after local midnight
-
+def compute_current_summary(anchor: pd.DataFrame) -> dict:
+    """'Right now' snapshot: the latest known reading for each field (the
+    anchor row is already forward-filled, so this is the most recent real
+    value even for slower-reporting sensors) -- not an average, not a
+    prediction."""
+    row = anchor.iloc[0]
     summary = {
-        "water_temp_c": round(todays["water_temp_c"].mean(), 1),
-        "discharge_cfs": round(todays["discharge_cfs"].mean()),
-        "cloud_cover_pct": round(todays["cloud_cover"].mean()),
-        "precipitation_in": round(todays["precipitation"].sum(), 2),
-        "conductance_uscm": round(todays["conductance_uscm"].mean()),
+        "water_temp_c": round(row["water_temp_c"], 1),
+        "discharge_cfs": round(row["discharge_cfs"]),
+        "cloud_cover_pct": round(row["cloud_cover"]),
+        "precipitation_in": round(row["precipitation"], 2),
+        "conductance_uscm": round(row["conductance_uscm"]),
     }
     for col in EXTRA_SUMMARY_COLUMNS:
-        if col in todays.columns:
-            summary[col] = round(todays[col].mean(), 1)
+        if col in anchor.columns:
+            summary[col] = round(row[col], 1)
     return summary
 
 
@@ -144,7 +141,7 @@ def predict_station(station_key: str) -> dict:
     model, spec = load_model_and_spec(station_key)
     timeline = predict_timeline(model, spec, anchor)
     daily_badge = compute_daily_badge(timeline)
-    current_summary = compute_current_summary(featured)
+    current_summary = compute_current_summary(anchor)
 
     return {
         "station": station_key,

@@ -41,12 +41,24 @@ def score_water_temp(temp_c: pd.Series) -> pd.Series:
     ).where(temp_c.notna(), 1.5)
 
 
+BUFORD_WADEABLE_CFS = (600, 1800)
+MEDLOCK_WADEABLE_CFS = (800, 2000)
+
+# Discharge above the wadeable range's upper bound, per station -- used both
+# by the scoring functions below and by the app's "high water" warning.
+WADEABLE_MAX_CFS = {
+    "buford_dam": BUFORD_WADEABLE_CFS[1],
+    "medlock_bridge": MEDLOCK_WADEABLE_CFS[1],
+}
+
+
 def score_buford_discharge(discharge_cfs: pd.Series) -> pd.Series:
     """0-3 pts. Wadeable range 600-1800 CFS scores highest."""
+    lo, hi = BUFORD_WADEABLE_CFS
     conditions = [
-        (discharge_cfs >= 600) & (discharge_cfs <= 1800),
-        ((discharge_cfs >= 300) & (discharge_cfs < 600))
-        | ((discharge_cfs > 1800) & (discharge_cfs <= 2500)),
+        (discharge_cfs >= lo) & (discharge_cfs <= hi),
+        ((discharge_cfs >= 300) & (discharge_cfs < lo))
+        | ((discharge_cfs > hi) & (discharge_cfs <= 2500)),
         ((discharge_cfs >= 100) & (discharge_cfs < 300))
         | ((discharge_cfs > 2500) & (discharge_cfs <= 4000)),
     ]
@@ -78,10 +90,11 @@ def score_medlock_discharge(discharge_cfs: pd.Series) -> pd.Series:
     distribution: 10th pct ~1100 CFS, 25th ~1300, median ~1720, 75th ~2440,
     90th ~3280 CFS.
     """
+    lo, hi = MEDLOCK_WADEABLE_CFS
     conditions = [
-        (discharge_cfs >= 800) & (discharge_cfs <= 2000),
-        ((discharge_cfs >= 400) & (discharge_cfs < 800))
-        | ((discharge_cfs > 2000) & (discharge_cfs <= 3500)),
+        (discharge_cfs >= lo) & (discharge_cfs <= hi),
+        ((discharge_cfs >= 400) & (discharge_cfs < lo))
+        | ((discharge_cfs > hi) & (discharge_cfs <= 3500)),
     ]
     choices = [2, 1]
     return pd.Series(

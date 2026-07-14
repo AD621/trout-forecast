@@ -13,6 +13,7 @@ STATIONS = {
             "00300": "dissolved_oxygen_mgl",
             "00095": "conductance_uscm",
         },
+        "usgs_url": "https://waterdata.usgs.gov/monitoring-location/USGS-02334430/#dataTypeId=continuous-00065-0&period=P7D&showFieldMeasurements=true",
     },
     "medlock_bridge": {
         "usgs_id": "02335000",
@@ -27,8 +28,13 @@ STATIONS = {
             "63680": "turbidity_fnu",
             "00095": "conductance_uscm",
         },
+        "usgs_url": "https://waterdata.usgs.gov/monitoring-location/USGS-02335000/#dataTypeId=continuous-00065-0&period=P7D&showFieldMeasurements=true",
     },
 }
+
+# USACE hydropower generation/release schedule -- covers Buford Dam releases,
+# which also drive downstream conditions at Medlock Bridge.
+DAM_SCHEDULE_URL = "https://spatialdata.usace.army.mil/Hydropower/"
 
 OPEN_METEO_HISTORICAL_URL = "https://archive-api.open-meteo.com/v1/archive"
 OPEN_METEO_FORECAST_URL = "https://api.open-meteo.com/v1/forecast"
