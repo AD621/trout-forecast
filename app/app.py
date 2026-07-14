@@ -155,6 +155,7 @@ def main() -> None:
         )
         return
 
+    st.caption("Refreshes daily at 6:00 AM EST")
     generated = pd.to_datetime(data["generated_at_utc"], utc=True).tz_convert(LOCAL_TZ)
     st.caption(f"Updated {fmt_ampm(generated)}")
 
