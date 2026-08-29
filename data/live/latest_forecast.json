@@ -1,896 +1,896 @@
 {
-  "generated_at_utc": "2026-08-28T21:19:11.125741+00:00",
+  "generated_at_utc": "2026-08-29T15:28:40.196143+00:00",
   "stations": {
     "buford_dam": {
       "station": "buford_dam",
-      "anchor_time_utc": "2026-08-28T21:00:00+00:00",
+      "anchor_time_utc": "2026-08-29T15:15:00+00:00",
       "current_summary": {
-        "water_temp_c": 10.4,
+        "water_temp_c": 10.6,
         "discharge_cfs": 606,
-        "cloud_cover_pct": 81,
+        "cloud_cover_pct": 22,
         "precipitation_in": 0.0,
-        "conductance_uscm": 73,
-        "dissolved_oxygen_mgl": 5.2
+        "conductance_uscm": 75,
+        "dissolved_oxygen_mgl": 5.5
       },
-      "daily_badge": "Good",
+      "daily_badge": "Fair",
       "hourly_timeline": [
         {
-          "timestamp_utc": "2026-08-28T22:00:00+00:00",
-          "condition": "Fair",
-          "probabilities": {
-            "Poor": 0.053,
-            "Fair": 0.796,
-            "Good": 0.15
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-28T23:00:00+00:00",
-          "condition": "Fair",
-          "probabilities": {
-            "Poor": 0.047,
-            "Fair": 0.832,
-            "Good": 0.121
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T00:00:00+00:00",
-          "condition": "Fair",
-          "probabilities": {
-            "Poor": 0.062,
-            "Fair": 0.815,
-            "Good": 0.123
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T01:00:00+00:00",
-          "condition": "Fair",
-          "probabilities": {
-            "Poor": 0.057,
-            "Fair": 0.814,
-            "Good": 0.128
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T02:00:00+00:00",
-          "condition": "Fair",
-          "probabilities": {
-            "Poor": 0.06,
-            "Fair": 0.766,
-            "Good": 0.175
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T03:00:00+00:00",
-          "condition": "Fair",
-          "probabilities": {
-            "Poor": 0.06,
-            "Fair": 0.732,
-            "Good": 0.208
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T04:00:00+00:00",
-          "condition": "Fair",
-          "probabilities": {
-            "Poor": 0.055,
-            "Fair": 0.653,
-            "Good": 0.291
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T05:00:00+00:00",
-          "condition": "Fair",
-          "probabilities": {
-            "Poor": 0.046,
-            "Fair": 0.577,
-            "Good": 0.377
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T06:00:00+00:00",
-          "condition": "Fair",
-          "probabilities": {
-            "Poor": 0.038,
-            "Fair": 0.495,
-            "Good": 0.467
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T07:00:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.036,
-            "Fair": 0.45,
-            "Good": 0.514
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T08:00:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.037,
-            "Fair": 0.437,
-            "Good": 0.526
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T09:00:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.029,
-            "Fair": 0.354,
-            "Good": 0.616
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T10:00:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.032,
-            "Fair": 0.334,
-            "Good": 0.634
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T11:00:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.032,
-            "Fair": 0.335,
-            "Good": 0.633
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T12:00:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.035,
-            "Fair": 0.341,
-            "Good": 0.624
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T13:00:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.032,
-            "Fair": 0.289,
-            "Good": 0.679
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T14:00:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.032,
-            "Fair": 0.337,
-            "Good": 0.631
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T15:00:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.029,
-            "Fair": 0.318,
-            "Good": 0.653
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T16:00:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.028,
-            "Fair": 0.319,
-            "Good": 0.653
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T17:00:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.036,
-            "Fair": 0.385,
-            "Good": 0.579
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T18:00:00+00:00",
+          "timestamp_utc": "2026-08-29T16:15:00+00:00",
           "condition": "Fair",
           "probabilities": {
             "Poor": 0.049,
-            "Fair": 0.483,
-            "Good": 0.469
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T19:00:00+00:00",
-          "condition": "Fair",
-          "probabilities": {
-            "Poor": 0.054,
-            "Fair": 0.536,
-            "Good": 0.41
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T20:00:00+00:00",
-          "condition": "Fair",
-          "probabilities": {
-            "Poor": 0.063,
-            "Fair": 0.553,
-            "Good": 0.384
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T21:00:00+00:00",
-          "condition": "Fair",
-          "probabilities": {
-            "Poor": 0.07,
-            "Fair": 0.614,
-            "Good": 0.316
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T22:00:00+00:00",
-          "condition": "Fair",
-          "probabilities": {
-            "Poor": 0.069,
-            "Fair": 0.662,
-            "Good": 0.269
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T23:00:00+00:00",
-          "condition": "Fair",
-          "probabilities": {
-            "Poor": 0.068,
-            "Fair": 0.65,
-            "Good": 0.282
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-30T00:00:00+00:00",
-          "condition": "Fair",
-          "probabilities": {
-            "Poor": 0.071,
-            "Fair": 0.668,
-            "Good": 0.262
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-30T01:00:00+00:00",
-          "condition": "Fair",
-          "probabilities": {
-            "Poor": 0.062,
-            "Fair": 0.587,
-            "Good": 0.351
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-30T02:00:00+00:00",
-          "condition": "Fair",
-          "probabilities": {
-            "Poor": 0.057,
-            "Fair": 0.54,
-            "Good": 0.403
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-30T03:00:00+00:00",
-          "condition": "Fair",
-          "probabilities": {
-            "Poor": 0.052,
-            "Fair": 0.5,
-            "Good": 0.449
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-30T04:00:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.047,
-            "Fair": 0.471,
-            "Good": 0.481
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-30T05:00:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.042,
-            "Fair": 0.42,
-            "Good": 0.537
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-30T06:00:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.032,
-            "Fair": 0.366,
-            "Good": 0.602
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-30T07:00:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.028,
-            "Fair": 0.316,
-            "Good": 0.656
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-30T08:00:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.032,
-            "Fair": 0.284,
-            "Good": 0.684
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-30T09:00:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.031,
-            "Fair": 0.268,
-            "Good": 0.7
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-30T10:00:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.039,
-            "Fair": 0.253,
-            "Good": 0.708
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-30T11:00:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.048,
-            "Fair": 0.301,
-            "Good": 0.652
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-30T12:00:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.047,
-            "Fair": 0.286,
-            "Good": 0.667
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-30T13:00:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.044,
-            "Fair": 0.214,
-            "Good": 0.742
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-30T14:00:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.043,
-            "Fair": 0.198,
-            "Good": 0.758
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-30T15:00:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.037,
-            "Fair": 0.206,
-            "Good": 0.757
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-30T16:00:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.044,
-            "Fair": 0.216,
-            "Good": 0.74
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-30T17:00:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.08,
-            "Fair": 0.33,
-            "Good": 0.59
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-30T18:00:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.107,
-            "Fair": 0.433,
-            "Good": 0.46
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-30T19:00:00+00:00",
-          "condition": "Fair",
-          "probabilities": {
-            "Poor": 0.113,
-            "Fair": 0.522,
-            "Good": 0.365
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-30T20:00:00+00:00",
-          "condition": "Fair",
-          "probabilities": {
-            "Poor": 0.115,
-            "Fair": 0.566,
-            "Good": 0.319
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-30T21:00:00+00:00",
-          "condition": "Fair",
-          "probabilities": {
-            "Poor": 0.118,
-            "Fair": 0.577,
-            "Good": 0.305
-          }
-        }
-      ]
-    },
-    "medlock_bridge": {
-      "station": "medlock_bridge",
-      "anchor_time_utc": "2026-08-28T20:15:00+00:00",
-      "current_summary": {
-        "water_temp_c": 14.6,
-        "discharge_cfs": 771,
-        "cloud_cover_pct": 100,
-        "precipitation_in": 0.4,
-        "conductance_uscm": 94,
-        "turbidity_fnu": 4.8
-      },
-      "daily_badge": "Good",
-      "hourly_timeline": [
-        {
-          "timestamp_utc": "2026-08-28T21:15:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.0,
-            "Fair": 0.012,
-            "Good": 0.988
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-28T22:15:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.0,
-            "Fair": 0.021,
-            "Good": 0.978
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-28T23:15:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.001,
-            "Fair": 0.046,
-            "Good": 0.954
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T00:15:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.001,
-            "Fair": 0.104,
-            "Good": 0.895
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T01:15:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.002,
-            "Fair": 0.234,
-            "Good": 0.765
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T02:15:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.002,
-            "Fair": 0.451,
-            "Good": 0.547
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T03:15:00+00:00",
-          "condition": "Fair",
-          "probabilities": {
-            "Poor": 0.002,
-            "Fair": 0.565,
-            "Good": 0.433
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T04:15:00+00:00",
-          "condition": "Fair",
-          "probabilities": {
-            "Poor": 0.002,
-            "Fair": 0.629,
-            "Good": 0.369
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T05:15:00+00:00",
-          "condition": "Fair",
-          "probabilities": {
-            "Poor": 0.001,
-            "Fair": 0.675,
-            "Good": 0.324
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T06:15:00+00:00",
-          "condition": "Fair",
-          "probabilities": {
-            "Poor": 0.002,
-            "Fair": 0.662,
-            "Good": 0.336
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T07:15:00+00:00",
-          "condition": "Fair",
-          "probabilities": {
-            "Poor": 0.002,
-            "Fair": 0.617,
-            "Good": 0.381
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T08:15:00+00:00",
-          "condition": "Fair",
-          "probabilities": {
-            "Poor": 0.002,
-            "Fair": 0.558,
-            "Good": 0.439
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T09:15:00+00:00",
-          "condition": "Fair",
-          "probabilities": {
-            "Poor": 0.002,
-            "Fair": 0.517,
-            "Good": 0.481
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T10:15:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.002,
-            "Fair": 0.455,
-            "Good": 0.543
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T11:15:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.003,
-            "Fair": 0.269,
-            "Good": 0.728
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T12:15:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.004,
-            "Fair": 0.168,
-            "Good": 0.828
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T13:15:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.004,
-            "Fair": 0.129,
-            "Good": 0.867
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T14:15:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.004,
-            "Fair": 0.118,
-            "Good": 0.878
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T15:15:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.006,
-            "Fair": 0.098,
-            "Good": 0.896
-          }
-        },
-        {
-          "timestamp_utc": "2026-08-29T16:15:00+00:00",
-          "condition": "Good",
-          "probabilities": {
-            "Poor": 0.004,
-            "Fair": 0.089,
-            "Good": 0.907
+            "Fair": 0.589,
+            "Good": 0.363
           }
         },
         {
           "timestamp_utc": "2026-08-29T17:15:00+00:00",
-          "condition": "Good",
+          "condition": "Fair",
           "probabilities": {
-            "Poor": 0.005,
-            "Fair": 0.089,
-            "Good": 0.906
+            "Poor": 0.049,
+            "Fair": 0.602,
+            "Good": 0.349
           }
         },
         {
           "timestamp_utc": "2026-08-29T18:15:00+00:00",
-          "condition": "Good",
+          "condition": "Fair",
           "probabilities": {
-            "Poor": 0.005,
-            "Fair": 0.087,
-            "Good": 0.908
+            "Poor": 0.096,
+            "Fair": 0.71,
+            "Good": 0.194
           }
         },
         {
           "timestamp_utc": "2026-08-29T19:15:00+00:00",
-          "condition": "Good",
+          "condition": "Fair",
           "probabilities": {
-            "Poor": 0.005,
-            "Fair": 0.088,
-            "Good": 0.906
+            "Poor": 0.086,
+            "Fair": 0.764,
+            "Good": 0.15
           }
         },
         {
           "timestamp_utc": "2026-08-29T20:15:00+00:00",
-          "condition": "Good",
+          "condition": "Fair",
           "probabilities": {
-            "Poor": 0.006,
-            "Fair": 0.094,
-            "Good": 0.9
+            "Poor": 0.075,
+            "Fair": 0.8,
+            "Good": 0.125
           }
         },
         {
           "timestamp_utc": "2026-08-29T21:15:00+00:00",
-          "condition": "Good",
+          "condition": "Fair",
           "probabilities": {
-            "Poor": 0.006,
-            "Fair": 0.114,
-            "Good": 0.879
+            "Poor": 0.076,
+            "Fair": 0.796,
+            "Good": 0.128
           }
         },
         {
           "timestamp_utc": "2026-08-29T22:15:00+00:00",
-          "condition": "Good",
+          "condition": "Fair",
           "probabilities": {
-            "Poor": 0.007,
-            "Fair": 0.157,
-            "Good": 0.836
+            "Poor": 0.062,
+            "Fair": 0.776,
+            "Good": 0.162
           }
         },
         {
           "timestamp_utc": "2026-08-29T23:15:00+00:00",
-          "condition": "Good",
+          "condition": "Fair",
           "probabilities": {
-            "Poor": 0.007,
-            "Fair": 0.216,
-            "Good": 0.777
+            "Poor": 0.054,
+            "Fair": 0.731,
+            "Good": 0.215
           }
         },
         {
           "timestamp_utc": "2026-08-30T00:15:00+00:00",
-          "condition": "Good",
+          "condition": "Fair",
           "probabilities": {
-            "Poor": 0.008,
-            "Fair": 0.242,
-            "Good": 0.75
+            "Poor": 0.049,
+            "Fair": 0.674,
+            "Good": 0.277
           }
         },
         {
           "timestamp_utc": "2026-08-30T01:15:00+00:00",
-          "condition": "Good",
+          "condition": "Fair",
           "probabilities": {
-            "Poor": 0.008,
-            "Fair": 0.305,
-            "Good": 0.687
+            "Poor": 0.046,
+            "Fair": 0.587,
+            "Good": 0.368
           }
         },
         {
           "timestamp_utc": "2026-08-30T02:15:00+00:00",
-          "condition": "Good",
+          "condition": "Fair",
           "probabilities": {
-            "Poor": 0.007,
-            "Fair": 0.386,
-            "Good": 0.607
+            "Poor": 0.044,
+            "Fair": 0.583,
+            "Good": 0.374
           }
         },
         {
           "timestamp_utc": "2026-08-30T03:15:00+00:00",
           "condition": "Fair",
           "probabilities": {
-            "Poor": 0.005,
-            "Fair": 0.586,
-            "Good": 0.409
+            "Poor": 0.038,
+            "Fair": 0.485,
+            "Good": 0.478
           }
         },
         {
           "timestamp_utc": "2026-08-30T04:15:00+00:00",
-          "condition": "Fair",
+          "condition": "Good",
           "probabilities": {
-            "Poor": 0.004,
-            "Fair": 0.615,
-            "Good": 0.38
+            "Poor": 0.036,
+            "Fair": 0.451,
+            "Good": 0.513
           }
         },
         {
           "timestamp_utc": "2026-08-30T05:15:00+00:00",
-          "condition": "Fair",
+          "condition": "Good",
           "probabilities": {
-            "Poor": 0.004,
-            "Fair": 0.675,
-            "Good": 0.321
+            "Poor": 0.034,
+            "Fair": 0.439,
+            "Good": 0.527
           }
         },
         {
           "timestamp_utc": "2026-08-30T06:15:00+00:00",
-          "condition": "Fair",
+          "condition": "Good",
           "probabilities": {
-            "Poor": 0.004,
-            "Fair": 0.672,
-            "Good": 0.325
+            "Poor": 0.033,
+            "Fair": 0.467,
+            "Good": 0.5
           }
         },
         {
           "timestamp_utc": "2026-08-30T07:15:00+00:00",
-          "condition": "Fair",
+          "condition": "Good",
           "probabilities": {
-            "Poor": 0.004,
-            "Fair": 0.661,
-            "Good": 0.335
+            "Poor": 0.037,
+            "Fair": 0.461,
+            "Good": 0.503
           }
         },
         {
           "timestamp_utc": "2026-08-30T08:15:00+00:00",
           "condition": "Fair",
           "probabilities": {
-            "Poor": 0.004,
-            "Fair": 0.643,
-            "Good": 0.353
+            "Poor": 0.034,
+            "Fair": 0.485,
+            "Good": 0.481
           }
         },
         {
           "timestamp_utc": "2026-08-30T09:15:00+00:00",
-          "condition": "Fair",
+          "condition": "Good",
           "probabilities": {
-            "Poor": 0.004,
-            "Fair": 0.625,
-            "Good": 0.371
+            "Poor": 0.029,
+            "Fair": 0.46,
+            "Good": 0.51
           }
         },
         {
           "timestamp_utc": "2026-08-30T10:15:00+00:00",
-          "condition": "Fair",
+          "condition": "Good",
           "probabilities": {
-            "Poor": 0.004,
-            "Fair": 0.587,
-            "Good": 0.409
+            "Poor": 0.026,
+            "Fair": 0.458,
+            "Good": 0.516
           }
         },
         {
           "timestamp_utc": "2026-08-30T11:15:00+00:00",
-          "condition": "Fair",
+          "condition": "Good",
           "probabilities": {
-            "Poor": 0.005,
-            "Fair": 0.552,
-            "Good": 0.443
+            "Poor": 0.025,
+            "Fair": 0.414,
+            "Good": 0.561
           }
         },
         {
           "timestamp_utc": "2026-08-30T12:15:00+00:00",
-          "condition": "Fair",
+          "condition": "Good",
           "probabilities": {
-            "Poor": 0.004,
-            "Fair": 0.613,
-            "Good": 0.383
+            "Poor": 0.028,
+            "Fair": 0.347,
+            "Good": 0.625
           }
         },
         {
           "timestamp_utc": "2026-08-30T13:15:00+00:00",
-          "condition": "Fair",
+          "condition": "Good",
           "probabilities": {
-            "Poor": 0.005,
-            "Fair": 0.544,
-            "Good": 0.451
+            "Poor": 0.028,
+            "Fair": 0.417,
+            "Good": 0.556
           }
         },
         {
           "timestamp_utc": "2026-08-30T14:15:00+00:00",
           "condition": "Good",
           "probabilities": {
+            "Poor": 0.032,
+            "Fair": 0.432,
+            "Good": 0.536
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-30T15:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.041,
+            "Fair": 0.57,
+            "Good": 0.389
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-30T16:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.049,
+            "Fair": 0.672,
+            "Good": 0.279
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-30T17:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.063,
+            "Fair": 0.745,
+            "Good": 0.193
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-30T18:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.064,
+            "Fair": 0.783,
+            "Good": 0.153
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-30T19:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.062,
+            "Fair": 0.761,
+            "Good": 0.176
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-30T20:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.06,
+            "Fair": 0.745,
+            "Good": 0.194
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-30T21:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.059,
+            "Fair": 0.742,
+            "Good": 0.198
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-30T22:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.058,
+            "Fair": 0.73,
+            "Good": 0.212
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-30T23:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.054,
+            "Fair": 0.714,
+            "Good": 0.233
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T00:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.046,
+            "Fair": 0.661,
+            "Good": 0.293
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T01:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.042,
+            "Fair": 0.606,
+            "Good": 0.352
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T02:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.039,
+            "Fair": 0.566,
+            "Good": 0.394
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T03:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.038,
+            "Fair": 0.536,
+            "Good": 0.426
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T04:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.043,
+            "Fair": 0.524,
+            "Good": 0.433
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T05:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.043,
+            "Fair": 0.487,
+            "Good": 0.47
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T06:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.042,
+            "Fair": 0.484,
+            "Good": 0.475
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T07:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.044,
+            "Fair": 0.487,
+            "Good": 0.469
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T08:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.049,
+            "Fair": 0.437,
+            "Good": 0.514
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T09:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.051,
+            "Fair": 0.434,
+            "Good": 0.515
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T10:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.044,
+            "Fair": 0.392,
+            "Good": 0.564
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T11:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.036,
+            "Fair": 0.333,
+            "Good": 0.631
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T12:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.034,
+            "Fair": 0.368,
+            "Good": 0.598
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T13:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.033,
+            "Fair": 0.397,
+            "Good": 0.571
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T14:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.034,
+            "Fair": 0.429,
+            "Good": 0.537
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T15:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.036,
+            "Fair": 0.443,
+            "Good": 0.522
+          }
+        }
+      ]
+    },
+    "medlock_bridge": {
+      "station": "medlock_bridge",
+      "anchor_time_utc": "2026-08-29T15:15:00+00:00",
+      "current_summary": {
+        "water_temp_c": 12.5,
+        "discharge_cfs": 987,
+        "cloud_cover_pct": 92,
+        "precipitation_in": 0.0,
+        "conductance_uscm": 89,
+        "turbidity_fnu": 4.8
+      },
+      "daily_badge": "Good",
+      "hourly_timeline": [
+        {
+          "timestamp_utc": "2026-08-29T16:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.001,
+            "Fair": 0.019,
+            "Good": 0.981
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-29T17:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.001,
+            "Fair": 0.032,
+            "Good": 0.967
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-29T18:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.001,
+            "Fair": 0.066,
+            "Good": 0.932
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-29T19:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.002,
+            "Fair": 0.13,
+            "Good": 0.868
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-29T20:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.003,
+            "Fair": 0.232,
+            "Good": 0.765
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-29T21:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.003,
+            "Fair": 0.386,
+            "Good": 0.611
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-29T22:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.003,
+            "Fair": 0.464,
+            "Good": 0.533
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-29T23:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.003,
+            "Fair": 0.546,
+            "Good": 0.451
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-30T00:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.002,
+            "Fair": 0.644,
+            "Good": 0.354
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-30T01:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.002,
+            "Fair": 0.698,
+            "Good": 0.3
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-30T02:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.002,
+            "Fair": 0.733,
+            "Good": 0.265
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-30T03:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.003,
+            "Fair": 0.749,
+            "Good": 0.248
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-30T04:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.003,
+            "Fair": 0.734,
+            "Good": 0.263
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-30T05:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.003,
+            "Fair": 0.684,
+            "Good": 0.313
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-30T06:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
             "Poor": 0.005,
-            "Fair": 0.449,
-            "Good": 0.546
+            "Fair": 0.479,
+            "Good": 0.516
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-30T07:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.007,
+            "Fair": 0.321,
+            "Good": 0.672
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-30T08:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.009,
+            "Fair": 0.27,
+            "Good": 0.722
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-30T09:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.009,
+            "Fair": 0.238,
+            "Good": 0.752
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-30T10:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.012,
+            "Fair": 0.195,
+            "Good": 0.793
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-30T11:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.011,
+            "Fair": 0.168,
+            "Good": 0.821
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-30T12:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.011,
+            "Fair": 0.154,
+            "Good": 0.835
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-30T13:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.008,
+            "Fair": 0.151,
+            "Good": 0.841
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-30T14:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.009,
+            "Fair": 0.151,
+            "Good": 0.84
           }
         },
         {
           "timestamp_utc": "2026-08-30T15:15:00+00:00",
           "condition": "Good",
           "probabilities": {
-            "Poor": 0.006,
-            "Fair": 0.308,
-            "Good": 0.686
+            "Poor": 0.009,
+            "Fair": 0.151,
+            "Good": 0.841
           }
         },
         {
           "timestamp_utc": "2026-08-30T16:15:00+00:00",
           "condition": "Good",
           "probabilities": {
-            "Poor": 0.006,
-            "Fair": 0.292,
-            "Good": 0.701
+            "Poor": 0.009,
+            "Fair": 0.176,
+            "Good": 0.815
           }
         },
         {
           "timestamp_utc": "2026-08-30T17:15:00+00:00",
           "condition": "Good",
           "probabilities": {
-            "Poor": 0.006,
-            "Fair": 0.264,
-            "Good": 0.73
+            "Poor": 0.009,
+            "Fair": 0.225,
+            "Good": 0.765
           }
         },
         {
           "timestamp_utc": "2026-08-30T18:15:00+00:00",
           "condition": "Good",
           "probabilities": {
-            "Poor": 0.005,
-            "Fair": 0.2,
-            "Good": 0.794
+            "Poor": 0.009,
+            "Fair": 0.257,
+            "Good": 0.734
           }
         },
         {
           "timestamp_utc": "2026-08-30T19:15:00+00:00",
           "condition": "Good",
           "probabilities": {
-            "Poor": 0.007,
-            "Fair": 0.137,
-            "Good": 0.856
+            "Poor": 0.011,
+            "Fair": 0.288,
+            "Good": 0.701
           }
         },
         {
           "timestamp_utc": "2026-08-30T20:15:00+00:00",
           "condition": "Good",
           "probabilities": {
+            "Poor": 0.011,
+            "Fair": 0.362,
+            "Good": 0.627
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-30T21:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.012,
+            "Fair": 0.413,
+            "Good": 0.575
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-30T22:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.009,
+            "Fair": 0.554,
+            "Good": 0.437
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-30T23:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.009,
+            "Fair": 0.605,
+            "Good": 0.387
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T00:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
             "Poor": 0.008,
-            "Fair": 0.147,
-            "Good": 0.845
+            "Fair": 0.662,
+            "Good": 0.331
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T01:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.007,
+            "Fair": 0.686,
+            "Good": 0.307
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T02:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.007,
+            "Fair": 0.717,
+            "Good": 0.276
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T03:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.007,
+            "Fair": 0.722,
+            "Good": 0.271
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T04:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.006,
+            "Fair": 0.716,
+            "Good": 0.278
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T05:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.006,
+            "Fair": 0.701,
+            "Good": 0.292
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T06:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.007,
+            "Fair": 0.682,
+            "Good": 0.311
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T07:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.007,
+            "Fair": 0.652,
+            "Good": 0.341
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T08:15:00+00:00",
+          "condition": "Fair",
+          "probabilities": {
+            "Poor": 0.009,
+            "Fair": 0.542,
+            "Good": 0.449
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T09:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.011,
+            "Fair": 0.442,
+            "Good": 0.547
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T10:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.013,
+            "Fair": 0.322,
+            "Good": 0.666
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T11:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.028,
+            "Fair": 0.29,
+            "Good": 0.682
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T12:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.012,
+            "Fair": 0.254,
+            "Good": 0.734
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T13:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.009,
+            "Fair": 0.24,
+            "Good": 0.751
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T14:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.01,
+            "Fair": 0.24,
+            "Good": 0.75
+          }
+        },
+        {
+          "timestamp_utc": "2026-08-31T15:15:00+00:00",
+          "condition": "Good",
+          "probabilities": {
+            "Poor": 0.01,
+            "Fair": 0.224,
+            "Good": 0.766
           }
         }
       ]
